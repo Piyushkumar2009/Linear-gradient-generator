@@ -17,16 +17,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Convert the values to numbers and sum them
     const result = Number(math.value) + Number(science.value) + Number(sst.value) + Number(english.value) + Number(hindi.value) + Number(computer.value);
+    
 
     // Calculate the percentage
     let percentage = (result / maxMark) * 100;
 
     // Format the percentage to two decimal places
     let modifiedPercentage = percentage.toFixed(2);
+    
 
     // Display the result
     output.innerText = `You have scored ${result} out of ${maxMark} and your percentage is ${modifiedPercentage}`;
     
+// Resetting input box
+
     math.value = '';
     science.value = '';
     english.value ='';
