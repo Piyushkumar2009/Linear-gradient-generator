@@ -1,68 +1,357 @@
-
-
-
-*{
+/* Global Styles */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
 }
-html{
+
+html {
   font-size: 62.5%;
 }
-body{
+
+body {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#5B06D2,#34BC59);
-}
-
-section{
-  width: 20rem;
-}
-
-h2{
+  background: linear-gradient(#5B06D2, #34BC59);
   text-align: center;
 }
 
-.box{
+/* Main Container */
+.container {
+  width: 25rem;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons */
+.box {
   display: flex;
-  align-items: center;
-  gap: 3rem;
+  justify-content: center;
+  gap: 2rem;
   margin: 2rem 0;
 }
 
-#btn1 , #btn2 {
+#btn1, #btn2 {
   height: 4rem;
   width: 8rem;
   border-radius: 3rem;
   border: none;
-}
-.copy-box{
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-}
-.para{
-  font-size: 1.2rem;
-  background: #000;
-  opacity: 0.5;
-  height: 10rem;
-  border-radius: 2rem;
-  padding: 1rem 2rem;
-  
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: transform 0.2s ease-in-out;
 }
 
-#btn1{
-  color: #fff;
+#btn1 {
   background: #5B06D2;
 }
 
-#btn2{
-  color: #fff;
+#btn2 {
   background: #34BC59;
 }
+
+#btn1:hover, #btn2:hover {
+  transform: scale(1.1);
+}
+
+/* Copy Box */
+.copy-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.para {
+  font-size: 1.4rem;
+  background: #000;
+  opacity: 0.6;
+  height: 8rem;
+  width: 90%;
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow: auto;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.para:hover {
+  opacity: 0.8;
+}/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#5B06D2, #34BC59);
+  text-align: center;
+}
+
+/* Main Container */
+.container {
+  width: 25rem;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons */
+.box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+#btn1, #btn2 {
+  height: 4rem;
+  width: 8rem;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+#btn1 {
+  background: #5B06D2;
+}
+
+#btn2 {
+  background: #34BC59;
+}
+
+#btn1:hover, #btn2:hover {
+  transform: scale(1.1);
+}
+
+/* Copy Box */
+.copy-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.para {
+  font-size: 1.4rem;
+  background: #000;
+  opacity: 0.6;
+  height: 8rem;
+  width: 90%;
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow: auto;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.para:hover {
+  opacity: 0.8;
+  }/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#5B06D2, #34BC59);
+  text-align: center;
+}
+
+/* Main Container */
+.container {
+  width: 25rem;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons */
+.box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+#btn1, #btn2 {
+  height: 4rem;
+  width: 8rem;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+#btn1 {
+  background: #5B06D2;
+}
+
+#btn2 {
+  background: #34BC59;
+}
+
+#btn1:hover, #btn2:hover {
+  transform: scale(1.1);
+}
+
+/* Copy Box */
+.copy-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.para {
+  font-size: 1.4rem;
+  background: #000;
+  opacity: 0.6;
+  height: 8rem;
+  width: 90%;
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow: auto;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.para:hover {
+  opacity: 0.8;
+}/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#5B06D2, #34BC59);
+  text-align: center;
+}
+
+/* Main Container */
+.container {
+  width: 25rem;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons */
+.box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+#btn1, #btn2 {
+  height: 4rem;
+  width: 8rem;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+#btn1 {
+  background: #5B06D2;
+}
+
+#btn2 {
+  background: #34BC59;
+}
+
+#btn1:hover, #btn2:hover {
+  transform: scale(1.1);
+}
+
+/* Copy Box */
+.copy-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.para {
+  font-size: 1.4rem;
+  background: #000;
+  opacity: 0.6;
+  height: 8rem;
+  width: 90%;
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow: auto;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.para:hover {
+  opacity: 0.8;
+  }
